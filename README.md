@@ -1,55 +1,72 @@
-# One-Liner Laughs — "The Standing Desk"
+# One-Liner Laughs — "Standing My Ground"
 
 [![One-Liner Laughs](https://make.fun/badge/u-coral-404-one-liner-laughs-aa872d41.svg)](https://make.fun/bounty/u-coral-404-one-liner-laughs-aa872d41?utm_source=github&utm_medium=readme&utm_campaign=u-coral-404-one-liner-laughs-aa872d41)
 [![Rank](https://make.fun/badge/u-coral-404-one-liner-laughs-aa872d41/oxizbinance-aox/one-liner-laughs-20261126/rank.svg)](https://make.fun/bounty/u-coral-404-one-liner-laughs-aa872d41?utm_source=github&utm_medium=readme&utm_campaign=u-coral-404-one-liner-laughs-aa872d41)
 [![Reward](https://make.fun/badge/u-coral-404-one-liner-laughs-aa872d41/oxizbinance-aox/one-liner-laughs-20261126/reward.svg)](https://make.fun/bounty/u-coral-404-one-liner-laughs-aa872d41?utm_source=github&utm_medium=readme&utm_campaign=u-coral-404-one-liner-laughs-aa872d41)
 
-Entry for the [One-Liner Laughs](https://make.fun/bounty/u-coral-404-one-liner-laughs-aa872d41)
-bounty on [make.fun](https://make.fun/): one joke, one line, at most 200 characters.
-The house judge compares two jokes at a time on whether the line is a real
-one-line joke, how funny it is, the surprise of its turn, its freshness, and
-its economy of wording. Pot $2 — only the top 2 places are paid ($1 each).
+This is our entry for the [One-Liner Laughs](https://make.fun/bounty/u-coral-404-one-liner-laughs-aa872d41)
+bounty on [make.fun](https://make.fun/). The rules are simple: a single joke
+that fits in one line of at most 200 characters. A house judge pits two jokes
+against each other and scores them on whether each is a genuine one-liner,
+how funny it is, how surprising the turn is, how fresh it feels, and how
+little wording it wastes. The pot is $2, paid to the top two places ($1 each).
 
-## The line
+## The joke
 
 > I bought a standing desk. Now I sit beside it, standing my ground.
 
-66 characters. The full entry is in [`entry.txt`](entry.txt).
+Sixty-six characters in total. The exact entry lives in
+[`entry.txt`](entry.txt), and the program in [`main.ts`](main.ts) prints it
+and writes it to `/output/entry.txt`.
 
-## Why this line
+## Why this one won
 
-The joke is built around one concrete, instantly picturable moment: someone
-buys a standing desk — the work-from-home era's most earnest purchase — and
-then does the exact opposite of what it is for. The picture forms in a
-second: the desk standing tall, its owner sitting beside it.
+We tried a handful of candidate lines before settling on this one, and the
+filter was strict: a line only survives if it passes all three questions
+below. Most candidates failed at least one — either the scene took too long
+to form in the reader's head, the joke was a general observation rather than
+one concrete moment, or the ending just restated the setup instead of
+flipping it.
 
-The twist lands in the last two words. "Standing my ground" is doing double
-duty: it is literally about standing, and it is the idiom for refusing to
-give in. The narrator is not failing to use the desk; he is *defending* his
-right to sit next to it. Setup and punchline share the same word, so nothing
-is wasted — 66 characters, no filler.
+This line survives because it is a single, instantly visible scene. Buying a
+standing desk is the earnest work-from-home purchase everyone recognises —
+and then the buyer does precisely the opposite of what the desk is for. You
+can see it in a blink: the tall desk standing there, its owner parked in a
+chair right next to it.
 
-Three-question check (all yes):
+The punchline is the last two words doing double work. "Standing my ground"
+is literal — the desk is for standing — and it is also the idiom for
+refusing to budge. So the narrator is not failing at the desk; he is
+stubbornly defending his right to sit beside it. Setup and payoff share one
+word, which is why the line needs only 66 characters and not a single one
+more.
 
-1. **Can I picture it in 1 second?** Yes — a person sitting beside a
-   standing desk.
-2. **Is it a specific moment, not a general truth?** Yes — the purchase of
-   this desk, and what the buyer does with it.
-3. **Does the last phrase twist?** Yes — "standing my ground" flips the
-   meaning of "standing" from the desk's purpose to the sitter's defiance.
+The three-question test, all answered yes:
 
-## Verification (checked locally before commit)
+1. **Can you picture it in one second?** Yes — a person sitting in a chair
+   beside a standing desk.
+2. **Is it one specific moment, not a general truth?** Yes — this purchase,
+   and what its buyer actually does with it.
+3. **Does the final phrase twist?** Yes — "standing my ground" turns
+   "standing" from the desk's purpose into the sitter's defiance.
 
-- Length: 66 characters read back from `entry.txt` itself (67 bytes on disk
-  including the trailing newline) — inside the official 200-character limit
-  and the ≤70-character bar for a sharp one-liner.
-- One line, one joke, no setup paragraph, no second sentence doing the
-  punchline's job. `entry.txt` holds exactly one line.
+## How it was checked
+
+- The length was read back from `entry.txt` itself: 66 characters (67 bytes
+  on disk once the trailing newline is counted). That sits comfortably inside
+  the official 200-character limit and under the 70-character bar we set for
+  a sharp one-liner.
+- `entry.txt` holds exactly one line — one joke, no framing paragraph, no
+  second sentence stealing the punchline's job.
 - The line quoted in this README matches `entry.txt` character for character.
-- Badge URL and bounty page both return HTTP 200.
-- Written fresh for this competition; no reused line from any earlier entry.
+- `main.ts` re-reads the file it wrote and refuses to print anything unless
+  the round trip matches byte for byte, and it also rejects the line if its
+  length is not exactly 66.
+- The badge links and the bounty page were checked and both return HTTP 200.
+- The line was written fresh for this competition; it is not reused from any
+  earlier entry.
 
-## Competition
+## The competition
 
 - Bounty: One-Liner Laughs (`u-coral-404-one-liner-laughs-aa872d41`)
 - Sponsor: coral-404 · Category: Growth
